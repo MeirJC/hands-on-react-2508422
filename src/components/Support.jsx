@@ -10,7 +10,7 @@ export default () => {
         } else {
           return `Supported ${count} times`
         }})()} */}
-      {count === 0 ? "Click to support" : `Supported ${count} times`}
+      { count === 0 ? "Click to support" : `Supported ${count} times` }
     </button>
   )
 }
