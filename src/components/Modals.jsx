@@ -1,4 +1,4 @@
-export default ({ member, handleClose }) => {
+export default ({ member, handleClose,handleChange }) => {
   return (
     <dialog id="modal-member" open>
       <article>
@@ -19,7 +19,12 @@ export default ({ member, handleClose }) => {
             <hgroup>
               <h1>{member.name}</h1>
               <p>{member.bio}</p>
-              <hgroup></hgroup>
+              <hgroup>
+                <a className="outline" href="#" role="button"
+                onClick={()=>{handleChange(Number(member.id) - 1)}}>Previous</a>
+                <a className="outline" href="#" role="button"
+                onClick={()=>{handleChange(Number(member.id) + 1)}}>Next</a>
+              </hgroup>
             </hgroup>
           </div>
         </hgroup>
