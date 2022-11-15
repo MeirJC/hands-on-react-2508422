@@ -19,6 +19,7 @@ export default ({ member, handleClose }) => {
             <hgroup>
               <h1>{member.name}</h1>
               <p>{member.bio}</p>
+              <hgroup></hgroup>
             </hgroup>
           </div>
         </hgroup>
